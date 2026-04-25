@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="id" data-theme="night">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mitra Mulia Logistik — Premium Logistics Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --font-sans: 'Poppins', sans-serif;
+      --font-serif: 'Source Serif 4', serif;
+      --color-base-100: hsl(0 0% 8%);
+      --color-base-200: hsl(0 0% 10%);
+      --color-base-300: hsl(0 0% 14%);
+      --color-neutral: hsl(0 0% 94%);
+    }
+
+    @layer base {
+      :root {
+        --bg-dark: 0 0% 5%;
+        --bg-soft: 0 0% 8%;
+        --line: 0 0% 100%;
+      }
+      html { scroll-behavior: smooth; }
+      body {
+        font-family: 'Poppins', sans-serif;
+        background: hsl(var(--bg-dark));
+        color: white;
+        overflow-x: hidden;
+      }
+      h1,h2,h3,h4,h5,h6 { font-weight: 500; }
+      h1 em, h2 em, h3 em, .serif-italic {
+        font-family: 'Source Serif 4', serif;
+        font-style: italic;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+        font-size: 20px;
+        line-height: 1;
+      }
+    }
+
+    @layer components {
+      .liquid-glass {
+        background: rgba(255,255,255,0.01);
+        background-blend-mode: luminosity;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: none;
+        box-shadow: inset 0 1px 1px rgba(255,255,255,0.1);
+        position: relative;
+        overflow: hidden;
+      }
+      .liquid-glass::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        padding: 1.4px;
+        border-radius: inherit;
+        background: linear-gradient(180deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.15) 20%, transparent 40%, transparent 60%, rgba(255,255,255,0.15) 80%, rgba(255,255,255,0.45) 100%);
+        -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor;
+        mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        mask-composite: exclude;
+        pointer-events: none;
+      }
+      .liquid-glass-strong {
+        background: rgba(255,255,255,0.01);
+        background-blend-mode: luminosity;
+        backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
+        border: none;
+        box-shadow: 4px 4px 4px rgba(0,0,0,0.05), inset 0 1px 1px rgba(255,255,255,0.15);
+        position: relative;
+        overflow: hidden;
+      }
+      .liquid-glass-strong::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        padding: 1.4px;
+        border-radius: inherit;
+        background: linear-gradient(180deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.2) 20%, transparent 40%, transparent 60%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0.5) 100%);
+        -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor;
+        mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        mask-composite: exclude;
+        pointer-events: none;
+      }
+      .section-shell {
+        @apply relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+      }
+      .video-layer {
+        @apply fixed inset-0 z-0 h-full w-full object-cover;
+      }
+      .veil {
+        background: linear-gradient(to bottom, rgba(0,0,0,.36), rgba(0,0,0,.52), rgba(0,0,0,.78));
+      }
+      .floating-orb {
+        position: absolute;
+        border-radius: 9999px;
+        background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.16), rgba(255,255,255,0.03) 40%, transparent 70%);
+        filter: blur(10px);
+        pointer-events: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <video class="video-layer" autoplay muted loop playsinline>
+    <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260315_073750_51473149-4350-4920-ae24-c8214286f323.mp4" type="video/mp4">
+  </video>
+  <div class="fixed inset-0 z-[1] veil"></div>
+
+  <div class="relative z-10">
+    <section class="min-h-screen py-4 lg:py-6">
+      <div class="section-shell min-h-screen">
+        <div class="relative flex min-h-[calc(100vh-2rem)] flex-col overflow-hidden rounded-[2rem] lg:min-h-[calc(100vh-3rem)] lg:flex-row">
+          <div class="absolute inset-0 floating-orb left-[5%] top-[12%] h-40 w-40"></div>
+          <div class="absolute inset-0 floating-orb bottom-[8%] right-[8%] h-64 w-64"></div>
+
+          <div class="relative w-full lg:w-[52%]">
+            <div class="liquid-glass-strong absolute inset-0 rounded-[2rem] lg:inset-2"></div>
+            <div class="relative flex min-h-[100svh] flex-col px-5 py-5 sm:px-7 sm:py-7 lg:min-h-[calc(100vh-3rem)] lg:px-8 lg:py-8">
+              <nav class="flex items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                  <div class="liquid-glass flex h-11 w-11 items-center justify-center rounded-2xl">
+                    <img src="/logo.png" alt="Mitra Mulia Logistik logo" class="h-8 w-8 rounded-xl object-contain" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'material-symbols-outlined text-white/90\'>local_shipping</span>'">
+                  </div>
+                  <div>
+                    <p class="text-2xl font-semibold tracking-tight text-white">Mitra Mulia</p>
+                    <p class="-mt-1 text-sm text-white/55">Logistik Samarinda</p>
+                  </div>
+                </div>
+                <button class="liquid-glass flex items-center gap-2 rounded-full px-4 py-2 text-sm text-white/80 transition hover:scale-105">
+                  <span class="material-symbols-outlined text-[18px]">menu</span>
+                  Menu
+                </button>
+              </nav>
+
+              <div class="flex flex-1 flex-col items-start justify-center py-12 lg:py-0">
+                <div class="liquid-glass mb-6 flex h-20 w-20 items-center justify-center rounded-[1.75rem]">
+                  <img src="/logo.png" alt="Mitra Mulia Logistik icon" class="h-14 w-14 rounded-2xl object-contain" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'material-symbols-outlined text-4xl text-white/90\'>inventory_2</span>'">
+                </div>
+                <p class="mb-4 text-sm uppercase tracking-[0.35em] text-white/55">Integrated Logistics Partner</p>
+                <h1 class="max-w-4xl text-5xl leading-[0.95] tracking-[-0.05em] text-white sm:text-6xl lg:text-7xl">
+                  Membangun <em class="text-white/80">arus distribusi</em><br>
+                  yang presisi, aman, dan modern
+                </h1>
+                <p class="mt-6 max-w-xl text-sm leading-7 text-white/70 sm:text-base">
+                  Landing page ini dirancang untuk menempatkan PT Mitra Mulia Logistik sebagai partner logistik yang terpercaya, terstruktur, dan siap melayani distribusi barang untuk kebutuhan bisnis di Samarinda dan sekitarnya.
+                </p>
+
+                <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+                  <a href="#katalog" class="liquid-glass-strong inline-flex items-center gap-3 rounded-full px-5 py-3 text-sm font-medium text-white transition duration-300 hover:scale-105 active:scale-95">
+                    Lihat Katalog Layanan
+                    <span class="flex h-7 w-7 items-center justify-center rounded-full bg-white/15">
+                      <span class="material-symbols-outlined text-[18px]">south_download</span>
+                    </span>
+                  </a>
+                  <a href="#kontak" class="text-sm text-white/70 transition hover:text-white">Konsultasi kebutuhan logistik</a>
+                </div>
+
+                <div class="mt-8 flex flex-wrap gap-3">
+                  <span class="liquid-glass rounded-full px-4 py-2 text-xs text-white/80">Distribusi Perusahaan</span>
+                  <span class="liquid-glass rounded-full px-4 py-2 text-xs text-white/80">Armada Operasional</span>
+                  <span class="liquid-glass rounded-full px-4 py-2 text-xs text-white/80">Kemitraan Lokal</span>
+                </div>
+              </div>
+
+              <div class="pt-8">
+                <p class="text-xs uppercase tracking-[0.35em] text-white/45">Visi Operasional</p>
+                <p class="mt-3 max-w-xl text-lg leading-relaxed text-white/80 sm:text-xl">
+                  “Menghadirkan sistem pengiriman yang <span class="serif-italic text-white">lebih tenang</span>, lebih rapi, dan lebih meyakinkan untuk setiap pergerakan barang.”
+                </p>
+                <div class="mt-5 flex items-center gap-4 text-white/55">
+                  <span class="h-px w-16 bg-white/20"></span>
+                  <span class="text-sm">PT Mitra Mulia Logistik</span>
+                  <span class="h-px w-16 bg-white/20"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative hidden lg:flex lg:w-[48%] lg:flex-col lg:px-2 lg:py-2">
+            <div class="flex flex-1 flex-col gap-5 p-4">
+              <div class="flex items-start justify-between gap-4">
+                <div class="liquid-glass flex items-center gap-3 rounded-full px-4 py-3 text-white/75">
+                  <span class="material-symbols-outlined">public</span>
+                  <span class="material-symbols-outlined">business_center</span>
+                  <span class="material-symbols-outlined">photo_camera</span>
+                  <span class="ml-2 material-symbols-outlined">arrow_forward</span>
+                </div>
+                <button class="liquid-glass rounded-full px-4 py-3 text-white/80">
+                  <span class="material-symbols-outlined">auto_awesome</span>
+                </button>
+              </div>
+
+              <div class="liquid-glass w-56 rounded-[2rem] p-5">
+                <p class="text-sm text-white/50">Company Frame</p>
+                <h2 class="mt-2 text-xl text-white">Masuk ke ekosistem distribusi yang lebih tertata</h2>
+                <p class="mt-3 text-sm leading-6 text-white/65">Struktur visual ini cocok untuk branding, company profile, dan konversi calon klien korporat.</p>
+              </div>
+
+              <div class="mt-auto liquid-glass-strong rounded-[2.5rem] p-5">
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="liquid-glass rounded-[2rem] p-5">
+                    <div class="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl bg-white/5 text-white/80">
+                      <span class="material-symbols-outlined">deployed_code</span>
+                    </div>
+                    <h3 class="text-lg text-white">Operasi Aktif</h3>
+                    <p class="mt-2 text-sm leading-6 text-white/60">Menampilkan bahwa bisnis benar-benar berjalan, bukan sekadar profil statis.</p>
+                  </div>
+                  <div class="liquid-glass rounded-[2rem] p-5">
+                    <div class="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl bg-white/5 text-white/80">
+                      <span class="material-symbols-outlined">menu_book</span>
+                    </div>
+                    <h3 class="text-lg text-white">Trust Archive</h3>
+                    <p class="mt-2 text-sm leading-6 text-white/60">Fokus pada kredibilitas, dokumentasi, dan jejak kemitraan lokal.</p>
+                  </div>
+                </div>
+
+                <div class="mt-4 liquid-glass rounded-[2rem] p-4">
+                  <div class="flex items-center gap-4">
+                    <div class="h-16 w-24 overflow-hidden rounded-2xl bg-white/6">
+                      <div class="flex h-full w-full items-center justify-center bg-gradient-to-br from-white/10 to-white/0">
+                        <span class="material-symbols-outlined text-3xl text-white/75">local_shipping</span>
+                      </div>
+                    </div>
+                    <div class="flex-1">
+                      <h3 class="text-lg text-white">Advanced Delivery Catalog</h3>
+                      <p class="mt-1 text-sm leading-6 text-white/60">Dirancang agar layanan utama bisa dipresentasikan jelas, premium, dan mudah di-scan oleh calon pelanggan.</p>
+                    </div>
+                    <button class="flex h-10 w-10 items-center justify-center rounded-full bg-white/8 text-white/80 transition hover:bg-white/12">
+                      <span class="material-symbols-outlined">add</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative py-10 lg:py-16">
+      <div class="section-shell">
+        <div class="grid gap-5 md:grid-cols-3">
+          <div class="liquid-glass-strong rounded-[2rem] p-6">
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5">
+              <span class="material-symbols-outlined text-white/80">location_on</span>
+            </div>
+            <h2 class="text-2xl text-white">Berbasis di Samarinda</h2>
+            <p class="mt-3 text-sm leading-7 text-white/65">Arah visual menekankan identitas lokal yang kuat untuk membangun kedekatan dengan pasar Kalimantan Timur.</p>
+          </div>
+          <div class="liquid-glass-strong rounded-[2rem] p-6">
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5">
+              <span class="material-symbols-outlined text-white/80">inventory</span>
+            </div>
+            <h2 class="text-2xl text-white">Fokus pada distribusi</h2>
+            <p class="mt-3 text-sm leading-7 text-white/65">Bahasa visual dan konten dibuat untuk perusahaan yang menangani pengiriman, armada, dan operasional lapangan.</p>
+          </div>
+          <div class="liquid-glass-strong rounded-[2rem] p-6">
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5">
+              <span class="material-symbols-outlined text-white/80">verified</span>
+            </div>
+            <h2 class="text-2xl text-white">Cocok untuk lead</h2>
+            <p class="mt-3 text-sm leading-7 text-white/65">Struktur CTA, blok kepercayaan, dan katalog layanan disusun untuk mendorong inquiry calon klien baru.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="katalog" class="relative min-h-[180vh] py-16 lg:py-24">
+      <div class="absolute inset-0 -z-10 bg-transparent"></div>
+      <div class="section-shell">
+        <div class="mb-10 max-w-3xl">
+          <p class="text-sm uppercase tracking-[0.35em] text-white/45">Katalog layanan</p>
+          <h2 class="mt-4 text-4xl tracking-[-0.04em] text-white sm:text-5xl">Presentasi layanan yang <em class="text-white/80">lebih terstruktur</em> dan lebih premium</h2>
+          <p class="mt-5 text-sm leading-7 text-white/65 sm:text-base">Bagian ini dibuat panjang agar saat user scroll, video di belakang tetap terasa hidup dan bergerak, sementara kartu layanan muncul seperti panel katalog premium.</p>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-12">
+          <div class="liquid-glass-strong rounded-[2rem] p-6 lg:col-span-7 lg:p-8">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-xs uppercase tracking-[0.3em] text-white/45">01</p>
+                <h3 class="mt-3 text-3xl text-white">Distribusi Barang Perusahaan</h3>
+              </div>
+              <span class="material-symbols-outlined text-white/70">north_east</span>
+            </div>
+            <p class="mt-4 max-w-2xl text-sm leading-7 text-white/65">Cocok untuk pengiriman rutin antar titik operasional, retail, gudang, atau cabang usaha. Bagian ini bisa diisi detail SLA, cakupan area, dan jenis barang saat data final dari klien sudah lengkap.</p>
+            <div class="mt-6 grid gap-3 sm:grid-cols-3">
+              <div class="liquid-glass rounded-2xl p-4 text-sm text-white/75">Rute terjadwal</div>
+              <div class="liquid-glass rounded-2xl p-4 text-sm text-white/75">Pengiriman B2B</div>
+              <div class="liquid-glass rounded-2xl p-4 text-sm text-white/75">Operasional reguler</div>
+            </div>
+          </div>
+
+          <div class="liquid-glass rounded-[2rem] p-6 lg:col-span-5 lg:p-8">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5 text-white/80">
+              <span class="material-symbols-outlined">package_2</span>
+            </div>
+            <h3 class="mt-5 text-2xl text-white">Handling & Delivery</h3>
+            <p class="mt-3 text-sm leading-7 text-white/65">Bisa dipakai untuk menjelaskan proses pickup, sorting, loading, dan delivery dalam bahasa yang lebih meyakinkan.</p>
+          </div>
+
+          <div class="liquid-glass rounded-[2rem] p-6 lg:col-span-4 lg:p-8">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5 text-white/80">
+              <span class="material-symbols-outlined">local_shipping</span>
+            </div>
+            <h3 class="mt-5 text-2xl text-white">Armada Operasional</h3>
+            <p class="mt-3 text-sm leading-7 text-white/65">Tempat ideal untuk menampilkan jenis armada, kapasitas, dan foto kendaraan perusahaan.</p>
+          </div>
+
+          <div class="liquid-glass-strong rounded-[2rem] p-6 lg:col-span-4 lg:p-8">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5 text-white/80">
+              <span class="material-symbols-outlined">warehouse</span>
+            </div>
+            <h3 class="mt-5 text-2xl text-white">Warehouse Support</h3>
+            <p class="mt-3 text-sm leading-7 text-white/65">Kalau klien punya fasilitas gudang atau transit point, blok ini bisa jadi nilai tambah besar.</p>
+          </div>
+
+          <div class="liquid-glass rounded-[2rem] p-6 lg:col-span-4 lg:p-8">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5 text-white/80">
+              <span class="material-symbols-outlined">map</span>
+            </div>
+            <h3 class="mt-5 text-2xl text-white">Area Coverage</h3>
+            <p class="mt-3 text-sm leading-7 text-white/65">Menjelaskan apakah layanan fokus Samarinda, Kalimantan Timur, antarkota, atau antarpulau.</p>
+          </div>
+
+          <div class="liquid-glass-strong rounded-[2rem] p-6 lg:col-span-12 lg:p-8">
+            <div class="grid gap-6 lg:grid-cols-[1.3fr_0.7fr] lg:items-end">
+              <div>
+                <p class="text-xs uppercase tracking-[0.3em] text-white/45">Featured service frame</p>
+                <h3 class="mt-3 text-3xl text-white">Halaman katalog bisa diarahkan menjadi alat closing, bukan hanya tampilan profil</h3>
+                <p class="mt-4 max-w-3xl text-sm leading-7 text-white/65">Aku sengaja bikin bagian ini lebih “jualan” daripada template referensi yang kamu kasih, karena untuk client logistik, website seharusnya bukan sekadar estetik. Kalau terlalu artistic tanpa struktur informasi yang kuat, hasilnya keren tapi lemah saat dipakai menjelaskan layanan dan meyakinkan calon pelanggan.</p>
+              </div>
+              <div class="grid gap-3">
+                <div class="liquid-glass rounded-2xl px-4 py-3 text-sm text-white/75">CTA request quotation</div>
+                <div class="liquid-glass rounded-2xl px-4 py-3 text-sm text-white/75">Showcase partner & trust</div>
+                <div class="liquid-glass rounded-2xl px-4 py-3 text-sm text-white/75">Fast access to WhatsApp</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="relative py-16 lg:py-24">
+      <div class="section-shell">
+        <div class="liquid-glass-strong rounded-[2.25rem] p-6 sm:p-8 lg:p-10">
+          <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+            <div>
+              <p class="text-sm uppercase tracking-[0.35em] text-white/45">Next step</p>
+              <h2 class="mt-4 text-4xl tracking-[-0.04em] text-white sm:text-5xl">Kalau kamu mau, desain ini bisa langsung dijadikan versi final presentasi ke klien</h2>
+              <p class="mt-5 max-w-2xl text-sm leading-7 text-white/65">Tapi catatan pentingnya: jangan langsung jual visual tanpa minta data final. Asumsi paling rawan ada di detail layanan, coverage area, armada, testimoni, dan kontak resmi. Kalau itu belum jelas, website bisa terlihat mahal tapi isi bisnisnya kosong.</p>
+            </div>
+            <div class="grid gap-3">
+              <a href="#" class="liquid-glass flex items-center justify-between rounded-2xl px-5 py-4 text-sm text-white/80">
+                <span>Siapkan company profile & legalitas</span>
+                <span class="material-symbols-outlined">folder_open</span>
+              </a>
+              <a href="#" class="liquid-glass flex items-center justify-between rounded-2xl px-5 py-4 text-sm text-white/80">
+                <span>Kumpulkan foto armada & tim</span>
+                <span class="material-symbols-outlined">photo_library</span>
+              </a>
+              <a href="#" class="liquid-glass flex items-center justify-between rounded-2xl px-5 py-4 text-sm text-white/80">
+                <span>Tentukan CTA utama website</span>
+                <span class="material-symbols-outlined">ads_click</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
